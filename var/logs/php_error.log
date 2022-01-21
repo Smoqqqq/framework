@@ -1206,3 +1206,12 @@ Stack trace:
 #2 C:\wamp64\www\framework\index.php(1): include('C:\\wamp64\\www\\f...')
 #3 {main}
   thrown in C:\wamp64\www\framework\_bin\routing_factory.php on line 101
+[21-Jan-2022 14:47:50 UTC] Undefined index: ASSET_FOLDER
+[21-Jan-2022 14:47:51 UTC] Undefined index: ASSET_FOLDER
+[21-Jan-2022 14:47:52 UTC] Undefined index: ASSET_FOLDER
+[21-Jan-2022 14:53:40 UTC] Undefined index: ASSETS_FOLDER
+[21-Jan-2022 14:53:40 UTC] Undefined index: ASSETS_FOLDER
+[21-Jan-2022 14:53:48 UTC] Undefined index: ASSETS_FOLDER
+[21-Jan-2022 14:53:48 UTC] Undefined index: ASSETS_FOLDER
+[21-Jan-2022 14:53:50 UTC] Undefined index: ASSETS_FOLDER
+[21-Jan-2022 14:53:50 UTC] Undefined index: ASSETS_FOLDER
