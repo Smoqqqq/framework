@@ -8,5 +8,5 @@ $pass = str_replace(" ", "", $env["DB_PASS"]);
 try {
     $dbh = new PDO("mysql:host=$host;dbname=$name", $user, $pass);
 } catch (PDOException $e) {
-    dd("A DB error occurred : " . $e->getMessage());
+    throw new Exception("An error occurred while trying to connect db : $e");
 }
