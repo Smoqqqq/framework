@@ -8,7 +8,7 @@ RewriteEngine on
 RewriteRule !\.(js|ico|txt|gif|jpg|jpeg|png|css|less|otf|eot|svg|ttf|woff|pdf|zip|xml)$ index.php
 
 ErrorDocument 404 /Template_v4/index.php 
-ErrorDocument 403 /Template_v4//index.php
+ErrorDocument 403 /Template_v4/index.php
 
 SetOutputFilter DEFLATE
 

@@ -1,7 +1,2 @@
-./config.php
-
-./functions/scss/
-./functions/minify/
-
 ./assets/js/compiled/
-./assets/css/pages/compiled/
+./assets/css/compiled/

@@ -1227,3 +1227,134 @@ Stack trace:
 [22-Jan-2022 09:44:19 Europe/Paris] PHP   1. {main}() C:\wamp64\www\framework\index.php:0
 [22-Jan-2022 09:44:19 Europe/Paris] PHP   2. include() C:\wamp64\www\framework\index.php:1
 [22-Jan-2022 09:44:19 Europe/Paris] PHP   3. require_once() C:\wamp64\www\framework\_bin\_autoload.php:10
+[22-Jan-2022 17:10:16 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to undefined function showPage() in C:\wamp64\www\framework\_bin\_autoload.php:13
+Stack trace:
+#0 C:\wamp64\www\framework\index.php(1): include()
+#1 {main}
+  thrown in C:\wamp64\www\framework\_bin\_autoload.php on line 13
+[22-Jan-2022 17:10:25 Europe/Paris] Undefined variable: title
+[22-Jan-2022 17:10:25 Europe/Paris] Undefined variable: description
+[22-Jan-2022 17:10:28 Europe/Paris] Undefined variable: title
+[22-Jan-2022 17:10:28 Europe/Paris] Undefined variable: description
+[22-Jan-2022 17:10:33 Europe/Paris] Undefined variable: title
+[22-Jan-2022 17:10:33 Europe/Paris] Undefined variable: description
+[22-Jan-2022 17:11:47 Europe/Paris] Undefined variable: title
+[22-Jan-2022 17:11:47 Europe/Paris] Undefined variable: description
+[22-Jan-2022 17:12:03 Europe/Paris] Undefined variable: title
+[22-Jan-2022 17:12:03 Europe/Paris] Undefined variable: description
+[22-Jan-2022 17:12:39 Europe/Paris] Undefined variable: title
+[22-Jan-2022 17:12:39 Europe/Paris] Undefined variable: description
+[22-Jan-2022 17:22:30 Europe/Paris] Undefined variable: title
+[22-Jan-2022 17:22:30 Europe/Paris] Undefined variable: description
+[22-Jan-2022 17:23:02 Europe/Paris] Undefined variable: title
+[22-Jan-2022 17:23:02 Europe/Paris] Undefined variable: description
+[22-Jan-2022 17:23:16 Europe/Paris] Undefined variable: title
+[22-Jan-2022 17:23:16 Europe/Paris] Undefined variable: description
+[22-Jan-2022 17:23:44 Europe/Paris] Undefined variable: title
+[22-Jan-2022 17:23:44 Europe/Paris] Undefined variable: description
+[22-Jan-2022 17:30:29 Europe/Paris] Undefined variable: title
+[22-Jan-2022 17:30:29 Europe/Paris] Undefined variable: description
+[22-Jan-2022 17:30:42 Europe/Paris] Undefined variable: title
+[22-Jan-2022 17:30:42 Europe/Paris] Undefined variable: description
+[22-Jan-2022 17:30:43 Europe/Paris] Undefined variable: title
+[22-Jan-2022 17:30:43 Europe/Paris] Undefined variable: description
+[22-Jan-2022 17:30:45 Europe/Paris] Undefined variable: title
+[22-Jan-2022 17:30:45 Europe/Paris] Undefined variable: description
+[22-Jan-2022 17:30:52 Europe/Paris] Undefined variable: title
+[22-Jan-2022 17:30:52 Europe/Paris] Undefined variable: description
+[22-Jan-2022 17:30:53 Europe/Paris] Undefined variable: title
+[22-Jan-2022 17:30:53 Europe/Paris] Undefined variable: description
+[22-Jan-2022 17:30:54 Europe/Paris] Undefined variable: title
+[22-Jan-2022 17:30:54 Europe/Paris] Undefined variable: description
+[22-Jan-2022 17:32:35 Europe/Paris] Undefined variable: title
+[22-Jan-2022 17:32:35 Europe/Paris] Undefined variable: description
+[22-Jan-2022 17:32:38 Europe/Paris] Undefined variable: title
+[22-Jan-2022 17:32:38 Europe/Paris] Undefined variable: description
+[22-Jan-2022 17:32:39 Europe/Paris] Undefined variable: title
+[22-Jan-2022 17:32:39 Europe/Paris] Undefined variable: description
+[22-Jan-2022 17:33:12 Europe/Paris] Undefined variable: title
+[22-Jan-2022 17:33:12 Europe/Paris] Undefined variable: description
+[22-Jan-2022 17:33:13 Europe/Paris] Undefined variable: title
+[22-Jan-2022 17:33:13 Europe/Paris] Undefined variable: description
+[22-Jan-2022 17:33:15 Europe/Paris] Undefined variable: title
+[22-Jan-2022 17:33:15 Europe/Paris] Undefined variable: description
+[22-Jan-2022 17:33:17 Europe/Paris] Undefined variable: title
+[22-Jan-2022 17:33:17 Europe/Paris] Undefined variable: description
+[22-Jan-2022 17:33:32 Europe/Paris] Undefined variable: title
+[22-Jan-2022 17:33:32 Europe/Paris] Undefined variable: description
+[22-Jan-2022 17:33:35 Europe/Paris] Undefined variable: title
+[22-Jan-2022 17:33:35 Europe/Paris] Undefined variable: description
+[22-Jan-2022 17:33:36 Europe/Paris] Undefined variable: title
+[22-Jan-2022 17:33:36 Europe/Paris] Undefined variable: description
+[22-Jan-2022 17:33:37 Europe/Paris] Undefined variable: title
+[22-Jan-2022 17:33:37 Europe/Paris] Undefined variable: description
+[22-Jan-2022 17:33:53 Europe/Paris] Undefined variable: title
+[22-Jan-2022 17:33:53 Europe/Paris] Undefined variable: description
+[22-Jan-2022 17:33:54 Europe/Paris] Undefined variable: title
+[22-Jan-2022 17:33:54 Europe/Paris] Undefined variable: description
+[22-Jan-2022 17:33:56 Europe/Paris] Undefined variable: title
+[22-Jan-2022 17:33:56 Europe/Paris] Undefined variable: description
+[22-Jan-2022 18:12:53 Europe/Paris] Undefined variable: title
+[22-Jan-2022 18:12:53 Europe/Paris] Undefined variable: description
+[22-Jan-2022 18:12:53 Europe/Paris] include(var/cache/views/templates/testFolder/home.php): failed to open stream: No such file or directory
+[22-Jan-2022 18:12:53 Europe/Paris] include(): Failed opening 'var/cache/views/templates/testFolder/home.php' for inclusion (include_path='.;C:\php\pear')
+[22-Jan-2022 18:13:26 Europe/Paris] Undefined variable: title
+[22-Jan-2022 18:13:26 Europe/Paris] Undefined variable: description
+[22-Jan-2022 18:13:26 Europe/Paris] include(var/cache/views/templates/testFolder/home.php): failed to open stream: No such file or directory
+[22-Jan-2022 18:13:26 Europe/Paris] include(): Failed opening 'var/cache/views/templates/testFolder/home.php' for inclusion (include_path='.;C:\php\pear')
+[22-Jan-2022 18:13:28 Europe/Paris] Undefined variable: title
+[22-Jan-2022 18:13:28 Europe/Paris] Undefined variable: description
+[22-Jan-2022 18:13:28 Europe/Paris] include(var/cache/views/templates/testFolder/home.php): failed to open stream: No such file or directory
+[22-Jan-2022 18:13:28 Europe/Paris] include(): Failed opening 'var/cache/views/templates/testFolder/home.php' for inclusion (include_path='.;C:\php\pear')
+[22-Jan-2022 18:13:29 Europe/Paris] Undefined variable: title
+[22-Jan-2022 18:13:29 Europe/Paris] Undefined variable: description
+[22-Jan-2022 18:13:29 Europe/Paris] include(var/cache/views/templates/testFolder/home.php): failed to open stream: No such file or directory
+[22-Jan-2022 18:13:29 Europe/Paris] include(): Failed opening 'var/cache/views/templates/testFolder/home.php' for inclusion (include_path='.;C:\php\pear')
+[22-Jan-2022 18:13:59 Europe/Paris] Undefined variable: title
+[22-Jan-2022 18:13:59 Europe/Paris] Undefined variable: description
+[22-Jan-2022 18:13:59 Europe/Paris] include(var/cache/views/templates/testFolder/home.php): failed to open stream: No such file or directory
+[22-Jan-2022 18:13:59 Europe/Paris] include(): Failed opening 'var/cache/views/templates/testFolder/home.php' for inclusion (include_path='.;C:\php\pear')
+[22-Jan-2022 18:19:33 Europe/Paris] Undefined variable: title
+[22-Jan-2022 18:19:33 Europe/Paris] Undefined variable: description
+[22-Jan-2022 18:19:33 Europe/Paris] include(var/cache/views/templates/testFolder/home.php): failed to open stream: No such file or directory
+[22-Jan-2022 18:19:33 Europe/Paris] include(): Failed opening 'var/cache/views/templates/testFolder/home.php' for inclusion (include_path='.;C:\php\pear')
+[22-Jan-2022 18:19:43 Europe/Paris] Undefined variable: title
+[22-Jan-2022 18:19:43 Europe/Paris] Undefined variable: description
+[22-Jan-2022 18:19:43 Europe/Paris] include(var/cache/views/templates/testFolder/home.php): failed to open stream: No such file or directory
+[22-Jan-2022 18:19:43 Europe/Paris] include(): Failed opening 'var/cache/views/templates/testFolder/home.php' for inclusion (include_path='.;C:\php\pear')
+[22-Jan-2022 18:20:08 Europe/Paris] Undefined variable: title
+[22-Jan-2022 18:20:08 Europe/Paris] Undefined variable: description
+[22-Jan-2022 18:20:08 Europe/Paris] include(var/cache/views/templates/testFolder/home.php): failed to open stream: No such file or directory
+[22-Jan-2022 18:20:08 Europe/Paris] include(): Failed opening 'var/cache/views/templates/testFolder/home.php' for inclusion (include_path='.;C:\php\pear')
+[22-Jan-2022 18:22:39 Europe/Paris] Undefined variable: title
+[22-Jan-2022 18:22:39 Europe/Paris] Undefined variable: description
+[22-Jan-2022 18:22:39 Europe/Paris] include(var/cache/views/templates/testFolder/home.php): failed to open stream: No such file or directory
+[22-Jan-2022 18:22:39 Europe/Paris] include(): Failed opening 'var/cache/views/templates/testFolder/home.php' for inclusion (include_path='.;C:\php\pear')
+[22-Jan-2022 18:22:45 Europe/Paris] Undefined variable: title
+[22-Jan-2022 18:22:45 Europe/Paris] Undefined variable: description
+[22-Jan-2022 18:22:45 Europe/Paris] include(var/cache/views/templates/testFolder/home.php): failed to open stream: No such file or directory
+[22-Jan-2022 18:22:45 Europe/Paris] include(): Failed opening 'var/cache/views/templates/testFolder/home.php' for inclusion (include_path='.;C:\php\pear')
+[22-Jan-2022 18:22:46 Europe/Paris] Undefined variable: title
+[22-Jan-2022 18:22:46 Europe/Paris] Undefined variable: description
+[22-Jan-2022 18:22:46 Europe/Paris] include(var/cache/views/templates/testFolder/home.php): failed to open stream: No such file or directory
+[22-Jan-2022 18:22:46 Europe/Paris] include(): Failed opening 'var/cache/views/templates/testFolder/home.php' for inclusion (include_path='.;C:\php\pear')
+[22-Jan-2022 18:22:48 Europe/Paris] Undefined variable: title
+[22-Jan-2022 18:22:48 Europe/Paris] Undefined variable: description
+[22-Jan-2022 18:22:48 Europe/Paris] include(var/cache/views/templates/testFolder/home.php): failed to open stream: No such file or directory
+[22-Jan-2022 18:22:48 Europe/Paris] include(): Failed opening 'var/cache/views/templates/testFolder/home.php' for inclusion (include_path='.;C:\php\pear')
+[22-Jan-2022 18:23:01 Europe/Paris] Undefined variable: title
+[22-Jan-2022 18:23:01 Europe/Paris] Undefined variable: description
+[22-Jan-2022 18:23:01 Europe/Paris] include(var/cache/views/templates/testFolder/home.php): failed to open stream: No such file or directory
+[22-Jan-2022 18:23:01 Europe/Paris] include(): Failed opening 'var/cache/views/templates/testFolder/home.php' for inclusion (include_path='.;C:\php\pear')
+[22-Jan-2022 18:23:04 Europe/Paris] Undefined variable: title
+[22-Jan-2022 18:23:04 Europe/Paris] Undefined variable: description
+[22-Jan-2022 18:23:04 Europe/Paris] include(var/cache/views/templates/testFolder/home.php): failed to open stream: No such file or directory
+[22-Jan-2022 18:23:04 Europe/Paris] include(): Failed opening 'var/cache/views/templates/testFolder/home.php' for inclusion (include_path='.;C:\php\pear')
+[22-Jan-2022 18:23:05 Europe/Paris] Undefined variable: title
+[22-Jan-2022 18:23:05 Europe/Paris] Undefined variable: description
+[22-Jan-2022 18:23:05 Europe/Paris] include(var/cache/views/templates/testFolder/home.php): failed to open stream: No such file or directory
+[22-Jan-2022 18:23:05 Europe/Paris] include(): Failed opening 'var/cache/views/templates/testFolder/home.php' for inclusion (include_path='.;C:\php\pear')
+[22-Jan-2022 18:23:06 Europe/Paris] Undefined variable: title
+[22-Jan-2022 18:23:06 Europe/Paris] Undefined variable: description
+[22-Jan-2022 18:23:06 Europe/Paris] include(var/cache/views/templates/testFolder/home.php): failed to open stream: No such file or directory
+[22-Jan-2022 18:23:06 Europe/Paris] include(): Failed opening 'var/cache/views/templates/testFolder/home.php' for inclusion (include_path='.;C:\php\pear')

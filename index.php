@@ -13,6 +13,6 @@
     <meta name="description" content="<?= $description ?>">
 </head>
 <body>
-    <?php include("var/view.php"); ?>
+    <?php include($page); ?>
 </body>
 </html>
