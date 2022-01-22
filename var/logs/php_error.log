@@ -1215,3 +1215,15 @@ Stack trace:
 [21-Jan-2022 14:53:48 UTC] Undefined index: ASSETS_FOLDER
 [21-Jan-2022 14:53:50 UTC] Undefined index: ASSETS_FOLDER
 [21-Jan-2022 14:53:50 UTC] Undefined index: ASSETS_FOLDER
+[22-Jan-2022 09:44:16 Europe/Paris] require_once(./_bin/dev/minify/src/Minify.php): failed to open stream: No such file or directory
+[22-Jan-2022 09:44:16 Europe/Paris] PHP Fatal error:  require_once(): Failed opening required './_bin/dev/minify/src/Minify.php' (include_path='.;C:\php\pear') in C:\wamp64\www\framework\_bin\dev\minifyJS.php on line 6
+[22-Jan-2022 09:44:16 Europe/Paris] PHP Stack trace:
+[22-Jan-2022 09:44:16 Europe/Paris] PHP   1. {main}() C:\wamp64\www\framework\index.php:0
+[22-Jan-2022 09:44:16 Europe/Paris] PHP   2. include() C:\wamp64\www\framework\index.php:1
+[22-Jan-2022 09:44:16 Europe/Paris] PHP   3. require_once() C:\wamp64\www\framework\_bin\_autoload.php:10
+[22-Jan-2022 09:44:19 Europe/Paris] require_once(./_bin/dev/minify/src/Minify.php): failed to open stream: No such file or directory
+[22-Jan-2022 09:44:19 Europe/Paris] PHP Fatal error:  require_once(): Failed opening required './_bin/dev/minify/src/Minify.php' (include_path='.;C:\php\pear') in C:\wamp64\www\framework\_bin\dev\minifyJS.php on line 6
+[22-Jan-2022 09:44:19 Europe/Paris] PHP Stack trace:
+[22-Jan-2022 09:44:19 Europe/Paris] PHP   1. {main}() C:\wamp64\www\framework\index.php:0
+[22-Jan-2022 09:44:19 Europe/Paris] PHP   2. include() C:\wamp64\www\framework\index.php:1
+[22-Jan-2022 09:44:19 Europe/Paris] PHP   3. require_once() C:\wamp64\www\framework\_bin\_autoload.php:10

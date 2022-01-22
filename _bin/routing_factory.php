@@ -92,7 +92,7 @@ function getMeta($file)
     global $title;
     global $description;
 
-    $index = "view.php";
+    $index = "var/view.php";
 
     $content = file_get_contents($file);
 

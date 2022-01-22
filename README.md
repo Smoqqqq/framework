@@ -2,11 +2,11 @@
 
 ## Install
 
-cd functions/
+cd _bin/dev
 git clone https://github.com/scssphp/scssphp.git  
 git clone https://github.com/matthiasmullie/minify.git
 
-changer la ligne 190 du fichier functions/minify/src/JS.php en:
+changer la ligne 190 du fichier _bin/dev/minify/src/JS.php en:
 
     return str_replace("\n", ";", $content);
 
@@ -18,6 +18,14 @@ By default, templates are in the "templates" folder
 You can configure the folder in .env at  
 
     TEMPLATES_FOLDER
+
+#### Routing
+For each page you create in the template folder, a route is created, with the exact same path and name ex:  
+I created a file :
+
+    templates/doc/home.php
+
+I can now access it at myurl.com/doc/home
 
 #### Meta data
 in every page, add this to the first lines for meta data :
