@@ -3,12 +3,12 @@
 use MatthiasMullie\Minify\Minify;
 use MatthiasMullie\Minify\JS;
 
-require_once("./_bin/dev/minify/src/Minify.php");
-require_once("./_bin/dev/minify/src/JS.php");
-require_once("./_bin/dev/minify/src/Exception.php");
-require_once("./_bin/dev/minify/src/Exceptions/BasicException.php");
-require_once("./_bin/dev/minify/src/Exceptions/FileImportException.php");
-require_once("./_bin/dev/minify/src/Exceptions/IOException.php");
+require_once("./_bin/dependencies/minify/src/Minify.php");
+require_once("./_bin/dependencies/minify/src/JS.php");
+require_once("./_bin/dependencies/minify/src/Exception.php");
+require_once("./_bin/dependencies/minify/src/Exceptions/BasicException.php");
+require_once("./_bin/dependencies/minify/src/Exceptions/FileImportException.php");
+require_once("./_bin/dependencies/minify/src/Exceptions/IOException.php");
 
 $path = $env["JS_WATCH_PATH"];
 

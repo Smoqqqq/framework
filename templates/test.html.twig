@@ -1,0 +1,20 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Titre de la page{% endblock %}
+
+{% block description %}Description de la page{% endblock %}
+
+{% block body %}
+
+	<h1>Bienvenu sur ArcadeIO !</h1>
+	<h2>Le framework que j'essaie de créer =)</h2>
+
+{% endblock %}
+
+{% block foo %}
+	<h1>MUST BE HIDDEN</h1>
+    <h3>(Not in layout)</h3>
+	<script>
+		alert(1)
+	</script>
+{% endblock %}
