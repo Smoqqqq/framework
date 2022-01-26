@@ -1,4 +1,4 @@
-<?php include("_bin/_autoload.php"); ?>
+<?php require_once("_bin/_autoload.php"); ?>
 
 <!DOCTYPE html>
 <html lang="en">

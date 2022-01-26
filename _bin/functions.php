@@ -19,6 +19,10 @@ function d($value){
     var_dump($value);
 }
 
+/**
+ * Provides relative path for an asset
+ */
+// TODO: add twig asset() function
 function asset($asset)
 {
     global $env;

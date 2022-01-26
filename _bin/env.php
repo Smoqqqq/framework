@@ -20,6 +20,7 @@ $defaults = [
     "DB_USER" => "",
     "DB_PASS" => "",
     "BUILD" => "build",
+    "ERROR_LOG" => getcwd() . "/var/logs/php_error.log"
 ];
 
 function defaultEnv()

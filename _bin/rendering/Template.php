@@ -2,7 +2,6 @@
 
 namespace App\rendering;
 
-use Error;
 use ErrorException;
 
 class Template
@@ -34,7 +33,8 @@ class Template
 
             $block = array(
                 "name" => $name,
-                "content" => $content
+                "content" => $content,
+                "printed" => false
             );
             array_push($blocks, $block);
         }
@@ -84,8 +84,18 @@ class Template
 
                     file_put_contents($this->filePath, $layout);
 
+                    $layoutBlock["printed"] = true;
+
                     break;
                 }
+            }
+        }
+        foreach ($this->layoutBlocks as $layoutBlock) {
+            if ($layoutBlock["printed"] === false) {
+                $layoutBlockContent = "{% block $layoutBlock[name] %}$layoutBlock[content]{% endblock %}";
+                $layout = str_replace($layoutBlockContent, "", $layout);
+
+                file_put_contents($this->filePath, $layout);
             }
         }
     }
@@ -94,7 +104,8 @@ class Template
      * Generates HTML file from another one in case user does not extends
      */
 
-    function generate(){
+    function generate()
+    {
         global $env;
 
         $this->filePath = "$env[BUILD]/$this->name.html";
@@ -107,7 +118,8 @@ class Template
         file_put_contents($this->filePath, $this->fileContent);
     }
 
-    function render(){
+    public function render()
+    {
         global $env;
         $env["RENDERED_PAGE"] = $this->filePath;
     }
@@ -122,8 +134,5 @@ class Template
         } else {
             $this->generate();
         }
-
-        $this->render();
     }
-
 }
