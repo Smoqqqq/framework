@@ -11,21 +11,23 @@ require_once("_bin/env.php");
 
 require_once("_bin/exceptions/exceptions_handler.php");
 
-// require_once("_bin/rendering.php");
-require_once("_bin/rendering/Template.php");
-require_once("_bin/rendering/RoutesGenerator.php");
+try {
 
-require_once("_bin/db.php");
-require_once("_bin/dev/minifyJS.php");
-require_once("_bin/dev/scssphp.php");
+    require_once("_bin/rendering/Template.php");
+    require_once("_bin/rendering/RoutesGenerator.php");
 
-if(!is_dir("build")){
-    mkdir("build");
+    require_once("_bin/db.php");
+    require_once("_bin/dev/minifyJS.php");
+    require_once("_bin/dev/scssphp.php");
+
+    if (!is_dir("build")) {
+        mkdir("build");
+    }
+
+    $routesGenerator = new RoutesGenerator();
+    $routesGenerator->renderCurrentPage();
+
+} catch (\Error $e) {
+    // custom error handling
+    trigger_error($e);
 }
-
-$template = new Template("homepage", "test.html.twig");
-$template->render();
-
-$routesGenerator = new RoutesGenerator();
-
-include($env["RENDERED_PAGE"]);

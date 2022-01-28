@@ -2,6 +2,8 @@
 
 namespace App\rendering;
 
+use App\rendering\Template;
+
 class RoutesGenerator
 {
 
@@ -9,14 +11,15 @@ class RoutesGenerator
     {
         global $env;
         $this->routes = [];
-        $this->renderingPath = $env["build"];
+        $this->renderingPath = $env["BUILD"];
         $this->templatesFolder = $env["TEMPLATES_FOLDER"];
         $this->getFiles();
     }
 
     private function getFiles($folder = null)
     {
-        if($folder === null) $folder = $this->templatesFolder;
+        global $env;
+        if ($folder === null) $folder = $this->templatesFolder;
         $foldersToRead = array();
         $files = array_diff(scandir($folder), array('.', '..'));
         foreach ($files as $file) {
@@ -25,10 +28,11 @@ class RoutesGenerator
                 array_push($foldersToRead, $filePath);
             } else {
                 $renderPath = "$this->renderingPath/" . str_replace("/", "___", $filePath);
+                $route = explode("$env[TEMPLATES_FOLDER]/", $filePath)[1];
+                $route = explode(".", $route)[0];
                 $this->routes[$filePath] = array(
                     "twig_path" => $filePath,
-                    "route" => $filePath,
-                    // TODO: remove extension
+                    "route" => $route,
                     "rendered_file" => $renderPath
                 );
             }
@@ -36,23 +40,30 @@ class RoutesGenerator
         foreach ($foldersToRead as $folder) {
             $this->getFiles($folder);
         }
-        dd($this->routes);
     }
 
-    public function getRoutes(){
+    public function getRoutes()
+    {
         return $this->routes;
     }
 
-    public function getCurrentRoute(){
+    public function getCurrentRoute()
+    {
         $slug = $_SERVER["REQUEST_URI"];
         $dir = explode("\\", getcwd());
         $dir = $dir[count($dir) - 1];
         $slug = str_replace("/$dir/", "", $slug);
-        return $slug;
+
+        foreach ($this->routes as $route) {
+            if ($route["route"] === $slug) return $route;
+        }
+        return false;
     }
 
-    function renderCurrentPage(){
+    function renderCurrentPage()
+    {
         $currentRoute = $this->getCurrentRoute();
-        $currentPage = array_search($currentRoute, $this->routes);
+        $template = new Template($currentRoute);
+        $template->render();
     }
 }

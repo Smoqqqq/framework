@@ -9,12 +9,13 @@ class Template
 
     private $fileContent;
 
-    function __construct($name, $file)
+    function __construct($route)
     {
         global $env;
-        $this->name = $name;
-        $this->file = "$env[TEMPLATES_FOLDER]/$file";
+        $this->name = $route["route"];
+        $this->file = $route["twig_path"];
         $this->fileContent = file_get_contents($this->file);
+        $this->filePath = "$env[BUILD]/$route[route].html";
         $this->build();
     }
 
@@ -26,18 +27,28 @@ class Template
         $firstBlocks = explode("{% block ", $file);
         $blocks = [];
         foreach ($firstBlocks as $firstBlock) {
-            $content = explode("{% ", $firstBlock)[0];
-            $content = explode(" %}", $content)[1];
 
-            $name = explode(" %}", $firstBlock)[0];
+            if (count(explode(" %}", $firstBlock)) > 1) {
 
-            $block = array(
-                "name" => $name,
-                "content" => $content,
-                "printed" => false
-            );
-            array_push($blocks, $block);
+                $name = explode(" %}", $firstBlock)[0];
+                
+                $content = explode("{% ", $firstBlock)[0];
+
+                if(endsWith($content, " %}") || strpos($content, " %}") === false){
+                    $content = "";
+                } else {
+                    $content = explode(" %}", $content)[1];
+                }
+
+                $block = array(
+                    "name" => $name,
+                    "content" => $content,
+                    "printed" => false
+                );
+                array_push($blocks, $block);
+            }
         }
+
         array_splice($blocks, 0, 1);
         return $blocks;
     }
@@ -67,7 +78,6 @@ class Template
     {
         global $env;
 
-        $this->filePath = "$env[BUILD]/$this->name.html";
         $layout = file_get_contents($this->layoutFile);
 
         if (!file_exists($this->filePath)) {
@@ -80,7 +90,9 @@ class Template
 
                     $layoutBlockContent = "{% block $layoutBlock[name] %}$layoutBlock[content]{% endblock %}";
 
-                    $layout = str_replace($layoutBlockContent, $block["content"], $layout);
+                    $content = "$layoutBlock[content]$block[content]";
+
+                    $layout = str_replace($layoutBlockContent, $content, $layout);
 
                     file_put_contents($this->filePath, $layout);
 
@@ -93,7 +105,7 @@ class Template
         foreach ($this->layoutBlocks as $layoutBlock) {
             if ($layoutBlock["printed"] === false) {
                 $layoutBlockContent = "{% block $layoutBlock[name] %}$layoutBlock[content]{% endblock %}";
-                $layout = str_replace($layoutBlockContent, "", $layout);
+                $layout = str_replace($layoutBlockContent, $layoutBlock["content"], $layout);
 
                 file_put_contents($this->filePath, $layout);
             }
@@ -106,11 +118,6 @@ class Template
 
     function generate()
     {
-        global $env;
-
-        $this->filePath = "$env[BUILD]/$this->name.html";
-        $layout = file_get_contents($this->layoutFile);
-
         if (!file_exists($this->filePath)) {
             fopen($this->filePath, "w");
         }
@@ -120,8 +127,7 @@ class Template
 
     public function render()
     {
-        global $env;
-        $env["RENDERED_PAGE"] = $this->filePath;
+        include($this->filePath);
     }
 
     public function build()
