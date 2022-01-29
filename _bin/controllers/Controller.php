@@ -1,10 +1,14 @@
 <?php
 
-namespace App\controllers;
+namespace CascadIO\controllers;
 
-class Controller{
-    public function __construct($route)
+use CascadIO\rendering\Twig;
+
+class Controller extends Twig{
+
+    public $currentRoute;
+
+    public function __construct()
     {
-        $this->route = $route;
     }
 }

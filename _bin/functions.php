@@ -6,6 +6,8 @@
  * @param mixed $value      The thing to dump
  */
 function dd($value){
+    global $env;
+    if($env["ENV"] === "prod") return false;
     var_dump($value);
     die;
 }
@@ -16,6 +18,8 @@ function dd($value){
  * @param mixed $value      The thing to dump
  */
 function d($value){
+    global $env;
+    if($env["ENV"] === "prod") return false;
     var_dump($value);
 }
 

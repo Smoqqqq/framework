@@ -1,73 +1,18 @@
 <?php
 
-namespace App\rendering;
+namespace CascadIO\rendering;
 
 use ErrorException;
 
 class Template
 {
 
-    private $fileContent;
-
     function __construct($route)
     {
         global $env;
-        $this->name = $route["route"];
-        $this->file = $route["twig_path"];
-        $this->fileContent = file_get_contents($this->file);
+        $this->fileContent = file_get_contents($route["twig_path"]);
         $this->filePath = "$env[BUILD]/$route[route].html";
         $this->build();
-    }
-
-    function getBlocks($file)
-    {
-
-        $file = file_get_contents($file);
-
-        $firstBlocks = explode("{% block ", $file);
-        $blocks = [];
-        foreach ($firstBlocks as $firstBlock) {
-
-            if (count(explode(" %}", $firstBlock)) > 1) {
-
-                $name = explode(" %}", $firstBlock)[0];
-                
-                $content = explode("{% ", $firstBlock)[0];
-
-                if(endsWith($content, " %}") || strpos($content, " %}") === false){
-                    $content = "";
-                } else {
-                    $content = explode(" %}", $content)[1];
-                }
-
-                $block = array(
-                    "name" => $name,
-                    "content" => $content,
-                    "printed" => false
-                );
-                array_push($blocks, $block);
-            }
-        }
-
-        array_splice($blocks, 0, 1);
-        return $blocks;
-    }
-
-    function getLayout()
-    {
-        global $env;
-
-        $this->layoutFile = explode("{% extends ", $this->fileContent)[1];
-        $this->layoutFile = explode(" %}", $this->layoutFile)[0];
-        $this->layoutFile = str_replace(["'", '"'], "", $this->layoutFile);
-        $this->layoutFile = "$env[TEMPLATES_FOLDER]/$this->layoutFile";
-        if (!$this->layoutFile) {
-            throw new ErrorException("Incorrect layout file $this->layoutFile", 0, 1, $this->file);
-        }
-
-        $this->layoutBlocks = $this->getBlocks($this->layoutFile);
-
-        return $this->layoutBlocks;
     }
 
     /**
@@ -76,7 +21,6 @@ class Template
 
     function generateFromBlocks()
     {
-        global $env;
 
         $layout = file_get_contents($this->layoutFile);
 
@@ -125,20 +69,13 @@ class Template
         file_put_contents($this->filePath, $this->fileContent);
     }
 
-    public function render()
+    public function render($route)
     {
         include($this->filePath);
     }
 
     public function build()
     {
-        $this->layout = $this->getLayout();
-        $this->blocks = $this->getBlocks($this->file);
-
-        if (!empty($this->layout) && !empty($this->blocks)) {
-            $this->generateFromBlocks();
-        } else {
-            $this->generate();
-        }
+        $this->generate();
     }
 }

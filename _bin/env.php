@@ -20,7 +20,9 @@ $defaults = [
     "DB_USER" => "",
     "DB_PASS" => "",
     "BUILD" => "build",
-    "ERROR_LOG" => getcwd() . "/var/logs/php_error.log"
+    "ERROR_LOG" => getcwd() . "/var/logs/php_error.log",
+    "CONTROLLERS_FOLDER" => "src/Controller",
+    "ROUTES" => "var/cache/routes.php",
 ];
 
 function defaultEnv()

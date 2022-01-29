@@ -37,11 +37,13 @@
         margin-bottom: 10px;
     }
     #error #head h2{
-        color: #280a07;
-        font-size: 20px;
+        color: #381a17;
+        font-size: 22px;
+        font-weight: 400;
     }
     #error #head p {
         color: #280a07;
-        font-size: 16px;
+        font-size: 18px;
+        font-weight: bold;
     }
 </style>

@@ -63,3 +63,5 @@ Twig (mockup) for now includes:
 - blocks
 - extends
 - extending parent block content
+- include
+- php conditions (if)
