@@ -14,15 +14,16 @@ for ($i = 0; $i < count($variables); $i++) {
 }
 
 $defaults = [
-    "TEMPLATES_FOLDER" => "templates",
-    "DB_NAME" => "",
-    "DB_HOST" => "",
-    "DB_USER" => "",
-    "DB_PASS" => "",
-    "BUILD" => "build",
-    "ERROR_LOG" => getcwd() . "/var/logs/php_error.log",
-    "CONTROLLERS_FOLDER" => "src/Controller",
-    "ROUTES" => "var/cache/routes.php",
+    "TEMPLATES_FOLDER"      => "templates",
+    "DB_NAME"               => "",
+    "DB_HOST"               => "",
+    "DB_USER"               => "",
+    "DB_PASS"               => "",
+    "TWIG_CACHE"            => "var/cache/Twig",
+    "DOCTRINE_CACHE"        => "var/cache/Doctrine",
+    "ERROR_LOG"             => "/var/logs/php_error.log",
+    "SRC"                   => "src/",
+    "ROUTES"                => "var/cache/routes.php",
 ];
 
 function defaultEnv()

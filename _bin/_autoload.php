@@ -1,36 +1,47 @@
 <?php
 
-use CascadIO\rendering\Template;
-use CascadIO\rendering\RoutesGenerator;
+namespace CascadIO;
 
-namespace CascadIO\rendering;
+use ReflectionClass;
+use App\Controllers\TestController;
+use Doctrine\Common\Annotations\PsrCachedReader;
+use Doctrine\Common\Annotations\AnnotationReader;
+use Doctrine\Common\Annotations\AnnotationRegistry;
 
 
 require_once("_bin/env.php");
 require_once("_bin/exceptions/exceptions_handler.php");
 
+class Kernel
+{
 
-try {
-    
-    require_once("_bin/functions.php");
+    public function __construct()
+    {
+        global $env;
+        try {
 
-    require_once("_bin/rendering/Template.php");
-    require_once("_bin/rendering/Twig.php");
-    require_once("_bin/controllers/Controller.php");
-    require_once("_bin/rendering/Routes.php");
+            require_once("./vendor/autoload.php");
 
-    require_once("_bin/db.php");
-    require_once("_bin/dev/minifyJS.php");
-    require_once("_bin/dev/scssphp.php");
+            require_once("_bin/functions.php");
+            require_once("_bin/Annotations/Route.php");
+            require_once("_bin/controllers/Controller.php");
+            require_once("src/Controller/TestController.php");
 
-    if (!is_dir("build")) {
-        mkdir("build");
+            require_once("_bin/Annotations/read.php");
+
+            /*  require_once("_bin/db.php");
+                require_once("_bin/dev/minifyJS.php");
+                require_once("_bin/dev/scssphp.php"); */
+
+
+            $controller = new TestController();
+
+            $controller->homepage();
+        } catch (\Error $e) {
+            // custom error handling
+            trigger_error($e);
+        }
     }
-
-    $route = new Routes();
-    $route->getCurrentRoute();
-
-} catch (\Error $e) {
-    // custom error handling
-    trigger_error($e);
 }
+
+new Kernel();

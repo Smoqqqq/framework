@@ -11072,3 +11072,484 @@ Stack trace:
 [29-Jan-2022 22:10:58 Europe/Paris] Undefined offset: 1
 [29-Jan-2022 22:11:41 Europe/Paris] explode() expects parameter 2 to be string, array given
 [29-Jan-2022 22:22:36 Europe/Paris] Undefined property: CascadIO\rendering\Routes::$controllers
+[30-Jan-2022 16:24:57 Europe/Paris] Undefined property: CascadIO\rendering\Routes::$controllers
+[30-Jan-2022 16:25:15 Europe/Paris] Error: Class 'CascadIO\rendering\Routes' not found in C:\wamp64\www\framework\_bin\_autoload.php:27
+Stack trace:
+#0 C:\wamp64\www\framework\index.php(1): require_once()
+#1 {main}
+[30-Jan-2022 16:29:03 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\LoaderError: The "/path/to/templates" directory does not exist ("/path/to/templates"). in C:\wamp64\www\framework\vendor\twig\twig\src\Loader\FilesystemLoader.php:92
+Stack trace:
+#0 C:\wamp64\www\framework\vendor\twig\twig\src\Loader\FilesystemLoader.php(78): Twig\Loader\FilesystemLoader->addPath('/path/to/templa...', '__main__')
+#1 C:\wamp64\www\framework\vendor\twig\twig\src\Loader\FilesystemLoader.php(45): Twig\Loader\FilesystemLoader->setPaths(Array)
+#2 C:\wamp64\www\framework\_bin\Twig\twig.php(6): Twig\Loader\FilesystemLoader->__construct('/path/to/templa...')
+#3 C:\wamp64\www\framework\_bin\_autoload.php(27): require_once('C:\\wamp64\\www\\f...')
+#4 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#5 {main}
+  thrown in C:\wamp64\www\framework\vendor\twig\twig\src\Loader\FilesystemLoader.php on line 92
+[30-Jan-2022 16:50:34 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\LoaderError: Unable to find template "page-two.html.twig" (looked into: templates). in C:\wamp64\www\framework\vendor\twig\twig\src\Loader\FilesystemLoader.php:227
+Stack trace:
+#0 C:\wamp64\www\framework\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('page-two.html.t...')
+#1 C:\wamp64\www\framework\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('page-two.html.t...')
+#2 C:\wamp64\www\framework\vendor\twig\twig\src\Environment.php(309): Twig\Environment->getTemplateClass('page-two.html.t...')
+#3 C:\wamp64\www\framework\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('page-two.html.t...')
+#4 C:\wamp64\www\framework\_bin\controllers\Controller.php(19): Twig\Environment->render('page-two.html.t...', Array)
+#5 C:\wamp64\www\framework\src\Controller\TestController.php(21): CascadIO\controllers\Controller->render('page-two.html.t...')
+#6 C:\wamp64\www\framework\_bin\_autoload.php(31): App\Con in C:\wamp64\www\framework\vendor\twig\twig\src\Loader\FilesystemLoader.php on line 227
+[30-Jan-2022 16:50:59 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\LoaderError: Unable to find template "page-two.html.twig" (looked into: templates). in C:\wamp64\www\framework\vendor\twig\twig\src\Loader\FilesystemLoader.php:227
+Stack trace:
+#0 C:\wamp64\www\framework\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('page-two.html.t...')
+#1 C:\wamp64\www\framework\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('page-two.html.t...')
+#2 C:\wamp64\www\framework\vendor\twig\twig\src\Environment.php(309): Twig\Environment->getTemplateClass('page-two.html.t...')
+#3 C:\wamp64\www\framework\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('page-two.html.t...')
+#4 C:\wamp64\www\framework\_bin\controllers\Controller.php(19): Twig\Environment->render('page-two.html.t...', Array)
+#5 C:\wamp64\www\framework\src\Controller\TestController.php(21): CascadIO\controllers\Controller->render('page-two.html.t...')
+#6 C:\wamp64\www\framework\_bin\_autoload.php(31): App\Con in C:\wamp64\www\framework\vendor\twig\twig\src\Loader\FilesystemLoader.php on line 227
+[30-Jan-2022 16:51:00 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\LoaderError: Unable to find template "page-two.html.twig" (looked into: templates). in C:\wamp64\www\framework\vendor\twig\twig\src\Loader\FilesystemLoader.php:227
+Stack trace:
+#0 C:\wamp64\www\framework\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('page-two.html.t...')
+#1 C:\wamp64\www\framework\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('page-two.html.t...')
+#2 C:\wamp64\www\framework\vendor\twig\twig\src\Environment.php(309): Twig\Environment->getTemplateClass('page-two.html.t...')
+#3 C:\wamp64\www\framework\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('page-two.html.t...')
+#4 C:\wamp64\www\framework\_bin\controllers\Controller.php(19): Twig\Environment->render('page-two.html.t...', Array)
+#5 C:\wamp64\www\framework\src\Controller\TestController.php(21): CascadIO\controllers\Controller->render('page-two.html.t...')
+#6 C:\wamp64\www\framework\_bin\_autoload.php(31): App\Con in C:\wamp64\www\framework\vendor\twig\twig\src\Loader\FilesystemLoader.php on line 227
+[30-Jan-2022 16:51:01 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\LoaderError: Unable to find template "page-two.html.twig" (looked into: templates). in C:\wamp64\www\framework\vendor\twig\twig\src\Loader\FilesystemLoader.php:227
+Stack trace:
+#0 C:\wamp64\www\framework\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('page-two.html.t...')
+#1 C:\wamp64\www\framework\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('page-two.html.t...')
+#2 C:\wamp64\www\framework\vendor\twig\twig\src\Environment.php(309): Twig\Environment->getTemplateClass('page-two.html.t...')
+#3 C:\wamp64\www\framework\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('page-two.html.t...')
+#4 C:\wamp64\www\framework\_bin\controllers\Controller.php(19): Twig\Environment->render('page-two.html.t...', Array)
+#5 C:\wamp64\www\framework\src\Controller\TestController.php(21): CascadIO\controllers\Controller->render('page-two.html.t...')
+#6 C:\wamp64\www\framework\_bin\_autoload.php(31): App\Con in C:\wamp64\www\framework\vendor\twig\twig\src\Loader\FilesystemLoader.php on line 227
+[30-Jan-2022 16:51:17 Europe/Paris] PHP Fatal error:  Uncaught Twig\Error\LoaderError: Unable to find template "page_two.html.twig" (looked into: templates). in C:\wamp64\www\framework\vendor\twig\twig\src\Loader\FilesystemLoader.php:227
+Stack trace:
+#0 C:\wamp64\www\framework\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('page_two.html.t...')
+#1 C:\wamp64\www\framework\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('page_two.html.t...')
+#2 C:\wamp64\www\framework\vendor\twig\twig\src\Environment.php(309): Twig\Environment->getTemplateClass('page_two.html.t...')
+#3 C:\wamp64\www\framework\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('page_two.html.t...')
+#4 C:\wamp64\www\framework\_bin\controllers\Controller.php(19): Twig\Environment->render('page_two.html.t...', Array)
+#5 C:\wamp64\www\framework\src\Controller\TestController.php(21): CascadIO\controllers\Controller->render('page_two.html.t...')
+#6 C:\wamp64\www\framework\_bin\_autoload.php(32): App\Con in C:\wamp64\www\framework\vendor\twig\twig\src\Loader\FilesystemLoader.php on line 227
+[30-Jan-2022 17:00:56 Europe/Paris] Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.0". You are running 7.4.9.
+[30-Jan-2022 17:13:07 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Class CascadIO\controllers\Route does not exist in C:\wamp64\www\framework\_bin\controllers\Controller.php:33
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\controllers\Controller.php(33): ReflectionClass->__construct('CascadIO\\contro...')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(33): CascadIO\controllers\Controller->getRoutes()
+#2 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#3 {main}
+  thrown in C:\wamp64\www\framework\_bin\controllers\Controller.php on line 33
+[30-Jan-2022 17:13:47 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Class Annotations\Route does not exist in C:\wamp64\www\framework\_bin\controllers\Controller.php:34
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\controllers\Controller.php(34): ReflectionClass->__construct('Annotations\\Rou...')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(33): CascadIO\controllers\Controller->getRoutes()
+#2 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#3 {main}
+  thrown in C:\wamp64\www\framework\_bin\controllers\Controller.php on line 34
+[30-Jan-2022 17:14:09 Europe/Paris] Trying to get property 'myProperty' of non-object
+[30-Jan-2022 17:14:24 Europe/Paris] Trying to get property 'route' of non-object
+[30-Jan-2022 17:14:25 Europe/Paris] Trying to get property 'route' of non-object
+[30-Jan-2022 17:15:30 Europe/Paris] Trying to get property 'route' of non-object
+[30-Jan-2022 17:15:31 Europe/Paris] Trying to get property 'route' of non-object
+[30-Jan-2022 17:15:32 Europe/Paris] Trying to get property 'route' of non-object
+[30-Jan-2022 17:15:34 Europe/Paris] Trying to get property 'route' of non-object
+[30-Jan-2022 17:15:45 Europe/Paris] Trying to get property 'route' of non-object
+[30-Jan-2022 17:15:53 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Class CascadIO\controllers\Annotations\Route does not exist in C:\wamp64\www\framework\_bin\controllers\Controller.php:34
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\controllers\Controller.php(34): ReflectionClass->__construct('CascadIO\\contro...')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(34): CascadIO\controllers\Controller->getRoutes()
+#2 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#3 {main}
+  thrown in C:\wamp64\www\framework\_bin\controllers\Controller.php on line 34
+[30-Jan-2022 17:16:06 Europe/Paris] Trying to get property 'route' of non-object
+[30-Jan-2022 17:16:30 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Property Route does not exist in C:\wamp64\www\framework\_bin\controllers\Controller.php:35
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\controllers\Controller.php(35): ReflectionClass->getProperty('Route')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(34): CascadIO\controllers\Controller->getRoutes()
+#2 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#3 {main}
+  thrown in C:\wamp64\www\framework\_bin\controllers\Controller.php on line 35
+[30-Jan-2022 17:16:36 Europe/Paris] Trying to get property 'route' of non-object
+[30-Jan-2022 17:17:44 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Property Route does not exist in C:\wamp64\www\framework\_bin\controllers\Controller.php:35
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\controllers\Controller.php(35): ReflectionClass->getProperty('Route')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(34): CascadIO\controllers\Controller->getRoutes()
+#2 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#3 {main}
+  thrown in C:\wamp64\www\framework\_bin\controllers\Controller.php on line 35
+[30-Jan-2022 17:17:49 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Property Route does not exist in C:\wamp64\www\framework\_bin\controllers\Controller.php:35
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\controllers\Controller.php(35): ReflectionClass->getProperty('Route')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(34): CascadIO\controllers\Controller->getRoutes()
+#2 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#3 {main}
+  thrown in C:\wamp64\www\framework\_bin\controllers\Controller.php on line 35
+[30-Jan-2022 17:17:49 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Property Route does not exist in C:\wamp64\www\framework\_bin\controllers\Controller.php:35
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\controllers\Controller.php(35): ReflectionClass->getProperty('Route')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(34): CascadIO\controllers\Controller->getRoutes()
+#2 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#3 {main}
+  thrown in C:\wamp64\www\framework\_bin\controllers\Controller.php on line 35
+[30-Jan-2022 17:17:50 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Property Route does not exist in C:\wamp64\www\framework\_bin\controllers\Controller.php:35
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\controllers\Controller.php(35): ReflectionClass->getProperty('Route')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(34): CascadIO\controllers\Controller->getRoutes()
+#2 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#3 {main}
+  thrown in C:\wamp64\www\framework\_bin\controllers\Controller.php on line 35
+[30-Jan-2022 18:12:21 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Class CascadIO\rendering\Route does not exist in C:\wamp64\www\framework\_bin\_autoload.php:42
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\_autoload.php(42): ReflectionClass->__construct('CascadIO\\render...')
+#1 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#2 {main}
+  thrown in C:\wamp64\www\framework\_bin\_autoload.php on line 42
+[30-Jan-2022 18:12:30 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Class CascadIO\rendering\Route does not exist in C:\wamp64\www\framework\_bin\_autoload.php:42
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\_autoload.php(42): ReflectionClass->__construct('CascadIO\\render...')
+#1 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#2 {main}
+  thrown in C:\wamp64\www\framework\_bin\_autoload.php on line 42
+[30-Jan-2022 18:13:56 Europe/Paris] Error: Class 'CascadIO\rendering\ReflectionClass' not found in C:\wamp64\www\framework\_bin\_autoload.php:42
+Stack trace:
+#0 C:\wamp64\www\framework\index.php(1): require_once()
+#1 {main}
+[30-Jan-2022 18:14:16 Europe/Paris] Error: Class 'CascadIO\rendering\ReflectionClass' not found in C:\wamp64\www\framework\_bin\_autoload.php:42
+Stack trace:
+#0 C:\wamp64\www\framework\index.php(1): require_once()
+#1 {main}
+[30-Jan-2022 18:15:57 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Class CascadIO\Annotations\Route does not exist in C:\wamp64\www\framework\_bin\_autoload.php:43
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\_autoload.php(43): ReflectionClass->__construct('CascadIO\\Annota...')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(61): CascadIO\Kernel->__construct()
+#2 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#3 {main}
+  thrown in C:\wamp64\www\framework\_bin\_autoload.php on line 43
+[30-Jan-2022 18:16:09 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Class CascadIO\Annotations\Route does not exist in C:\wamp64\www\framework\_bin\_autoload.php:43
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\_autoload.php(43): ReflectionClass->__construct('CascadIO\\Annota...')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(61): CascadIO\Kernel->__construct()
+#2 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#3 {main}
+  thrown in C:\wamp64\www\framework\_bin\_autoload.php on line 43
+[30-Jan-2022 18:16:10 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Class CascadIO\Annotations\Route does not exist in C:\wamp64\www\framework\_bin\_autoload.php:43
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\_autoload.php(43): ReflectionClass->__construct('CascadIO\\Annota...')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(61): CascadIO\Kernel->__construct()
+#2 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#3 {main}
+  thrown in C:\wamp64\www\framework\_bin\_autoload.php on line 43
+[30-Jan-2022 18:16:11 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Class CascadIO\Annotations\Route does not exist in C:\wamp64\www\framework\_bin\_autoload.php:43
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\_autoload.php(43): ReflectionClass->__construct('CascadIO\\Annota...')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(61): CascadIO\Kernel->__construct()
+#2 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#3 {main}
+  thrown in C:\wamp64\www\framework\_bin\_autoload.php on line 43
+[30-Jan-2022 18:16:12 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Class CascadIO\Route does not exist in C:\wamp64\www\framework\_bin\_autoload.php:43
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\_autoload.php(43): ReflectionClass->__construct('CascadIO\\Route')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(61): CascadIO\Kernel->__construct()
+#2 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#3 {main}
+  thrown in C:\wamp64\www\framework\_bin\_autoload.php on line 43
+[30-Jan-2022 18:18:01 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Property route does not exist in C:\wamp64\www\framework\_bin\_autoload.php:45
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\_autoload.php(45): ReflectionClass->getProperty('route')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(62): CascadIO\Kernel->__construct()
+#2 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#3 {main}
+  thrown in C:\wamp64\www\framework\_bin\_autoload.php on line 45
+[30-Jan-2022 18:18:03 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Property route does not exist in C:\wamp64\www\framework\_bin\_autoload.php:45
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\_autoload.php(45): ReflectionClass->getProperty('route')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(62): CascadIO\Kernel->__construct()
+#2 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#3 {main}
+  thrown in C:\wamp64\www\framework\_bin\_autoload.php on line 45
+[30-Jan-2022 18:23:30 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Property route does not exist in C:\wamp64\www\framework\_bin\_autoload.php:45
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\_autoload.php(45): ReflectionClass->getProperty('route')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(62): CascadIO\Kernel->__construct()
+#2 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#3 {main}
+  thrown in C:\wamp64\www\framework\_bin\_autoload.php on line 45
+[30-Jan-2022 18:24:31 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Property route does not exist in C:\wamp64\www\framework\_bin\_autoload.php:45
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\_autoload.php(45): ReflectionClass->getProperty('route')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(62): CascadIO\Kernel->__construct()
+#2 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#3 {main}
+  thrown in C:\wamp64\www\framework\_bin\_autoload.php on line 45
+[30-Jan-2022 18:31:44 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Property route does not exist in C:\wamp64\www\framework\_bin\_autoload.php:45
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\_autoload.php(45): ReflectionClass->getProperty('route')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(62): CascadIO\Kernel->__construct()
+#2 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#3 {main}
+  thrown in C:\wamp64\www\framework\_bin\_autoload.php on line 45
+[30-Jan-2022 18:31:45 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Property route does not exist in C:\wamp64\www\framework\_bin\_autoload.php:45
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\_autoload.php(45): ReflectionClass->getProperty('route')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(62): CascadIO\Kernel->__construct()
+#2 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#3 {main}
+  thrown in C:\wamp64\www\framework\_bin\_autoload.php on line 45
+[30-Jan-2022 18:31:45 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Property route does not exist in C:\wamp64\www\framework\_bin\_autoload.php:45
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\_autoload.php(45): ReflectionClass->getProperty('route')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(62): CascadIO\Kernel->__construct()
+#2 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#3 {main}
+  thrown in C:\wamp64\www\framework\_bin\_autoload.php on line 45
+[30-Jan-2022 18:31:46 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Property route does not exist in C:\wamp64\www\framework\_bin\_autoload.php:45
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\_autoload.php(45): ReflectionClass->getProperty('route')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(62): CascadIO\Kernel->__construct()
+#2 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#3 {main}
+  thrown in C:\wamp64\www\framework\_bin\_autoload.php on line 45
+[30-Jan-2022 18:55:06 Europe/Paris] Undefined variable: classAnnotations
+[30-Jan-2022 18:56:51 Europe/Paris] Undefined variable: classAnnotations
+[30-Jan-2022 18:57:31 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Property route does not exist in C:\wamp64\www\framework\_bin\_autoload.php:40
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\_autoload.php(40): ReflectionClass->getProperty('route')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(58): CascadIO\Kernel->__construct()
+#2 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#3 {main}
+  thrown in C:\wamp64\www\framework\_bin\_autoload.php on line 40
+[30-Jan-2022 18:57:40 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Property Route does not exist in C:\wamp64\www\framework\_bin\_autoload.php:40
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\_autoload.php(40): ReflectionClass->getProperty('Route')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(58): CascadIO\Kernel->__construct()
+#2 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#3 {main}
+  thrown in C:\wamp64\www\framework\_bin\_autoload.php on line 40
+[30-Jan-2022 18:57:40 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Property Route does not exist in C:\wamp64\www\framework\_bin\_autoload.php:40
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\_autoload.php(40): ReflectionClass->getProperty('Route')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(58): CascadIO\Kernel->__construct()
+#2 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#3 {main}
+  thrown in C:\wamp64\www\framework\_bin\_autoload.php on line 40
+[30-Jan-2022 18:59:16 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Property Route does not exist in C:\wamp64\www\framework\_bin\_autoload.php:42
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\_autoload.php(42): ReflectionClass->getProperty('Route')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(60): CascadIO\Kernel->__construct()
+#2 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#3 {main}
+  thrown in C:\wamp64\www\framework\_bin\_autoload.php on line 42
+[30-Jan-2022 18:59:28 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Property Route does not exist in C:\wamp64\www\framework\_bin\_autoload.php:42
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\_autoload.php(42): ReflectionClass->getProperty('Route')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(60): CascadIO\Kernel->__construct()
+#2 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#3 {main}
+  thrown in C:\wamp64\www\framework\_bin\_autoload.php on line 42
+[30-Jan-2022 18:59:42 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Property route does not exist in C:\wamp64\www\framework\_bin\_autoload.php:42
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\_autoload.php(42): ReflectionClass->getProperty('route')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(60): CascadIO\Kernel->__construct()
+#2 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#3 {main}
+  thrown in C:\wamp64\www\framework\_bin\_autoload.php on line 42
+[30-Jan-2022 19:55:00 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Property route does not exist in C:\wamp64\www\framework\_bin\_autoload.php:43
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\_autoload.php(43): ReflectionClass->getProperty('route')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(61): CascadIO\Kernel->__construct()
+#2 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#3 {main}
+  thrown in C:\wamp64\www\framework\_bin\_autoload.php on line 43
+[30-Jan-2022 20:00:05 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Class App\Controllers\TestController does not exist in C:\wamp64\www\framework\_bin\Annotations\read.php:10
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\Annotations\read.php(10): ReflectionClass->__construct('App\\Controllers...')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(26): require_once('C:\\wamp64\\www\\f...')
+#2 C:\wamp64\www\framework\_bin\_autoload.php(46): CascadIO\Kernel->__construct()
+#3 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#4 {main}
+  thrown in C:\wamp64\www\framework\_bin\Annotations\read.php on line 10
+[30-Jan-2022 20:00:24 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Class App\Controllers\TestController does not exist in C:\wamp64\www\framework\_bin\Annotations\read.php:11
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\Annotations\read.php(11): ReflectionClass->__construct('App\\Controllers...')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(26): require_once('C:\\wamp64\\www\\f...')
+#2 C:\wamp64\www\framework\_bin\_autoload.php(46): CascadIO\Kernel->__construct()
+#3 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#4 {main}
+  thrown in C:\wamp64\www\framework\_bin\Annotations\read.php on line 11
+[30-Jan-2022 20:01:36 Europe/Paris] Trying to get property 'route' of non-object
+[30-Jan-2022 20:01:44 Europe/Paris] Trying to get property 'route' of non-object
+[30-Jan-2022 20:01:45 Europe/Paris] Trying to get property 'route' of non-object
+[30-Jan-2022 20:02:12 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Class App\Controllers\TestController does not exist in C:\wamp64\www\framework\_bin\Annotations\read.php:11
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\Annotations\read.php(11): ReflectionClass->__construct('App\\Controllers...')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(26): require_once('C:\\wamp64\\www\\f...')
+#2 C:\wamp64\www\framework\_bin\_autoload.php(46): CascadIO\Kernel->__construct()
+#3 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#4 {main}
+  thrown in C:\wamp64\www\framework\_bin\Annotations\read.php on line 11
+[30-Jan-2022 20:02:33 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Class App\Controllers\TestController does not exist in C:\wamp64\www\framework\_bin\Annotations\read.php:11
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\Annotations\read.php(11): ReflectionClass->__construct('App\\Controllers...')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(26): require_once('C:\\wamp64\\www\\f...')
+#2 C:\wamp64\www\framework\_bin\_autoload.php(46): CascadIO\Kernel->__construct()
+#3 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#4 {main}
+  thrown in C:\wamp64\www\framework\_bin\Annotations\read.php on line 11
+[30-Jan-2022 20:02:38 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Class App\Controllers\TestController does not exist in C:\wamp64\www\framework\_bin\Annotations\read.php:11
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\Annotations\read.php(11): ReflectionClass->__construct('App\\Controllers...')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(26): require_once('C:\\wamp64\\www\\f...')
+#2 C:\wamp64\www\framework\_bin\_autoload.php(46): CascadIO\Kernel->__construct()
+#3 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#4 {main}
+  thrown in C:\wamp64\www\framework\_bin\Annotations\read.php on line 11
+[30-Jan-2022 20:03:44 Europe/Paris] Error: Class 'CascadIO\controllers\Controller' not found in C:\wamp64\www\framework\src\Controller\TestController.php:9
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\Annotations\read.php(8): require_once()
+#1 C:\wamp64\www\framework\_bin\_autoload.php(26): require_once('C:\\wamp64\\www\\f...')
+#2 C:\wamp64\www\framework\_bin\_autoload.php(46): CascadIO\Kernel->__construct()
+#3 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#4 {main}
+[30-Jan-2022 20:03:49 Europe/Paris] Error: Class 'CascadIO\controllers\Controller' not found in C:\wamp64\www\framework\src\Controller\TestController.php:9
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\Annotations\read.php(8): require_once()
+#1 C:\wamp64\www\framework\_bin\_autoload.php(26): require_once('C:\\wamp64\\www\\f...')
+#2 C:\wamp64\www\framework\_bin\_autoload.php(46): CascadIO\Kernel->__construct()
+#3 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#4 {main}
+[30-Jan-2022 20:04:13 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Class App\Controllers\TestController does not exist in C:\wamp64\www\framework\_bin\Annotations\read.php:11
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\Annotations\read.php(11): ReflectionClass->__construct('App\\Controllers...')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(26): require_once('C:\\wamp64\\www\\f...')
+#2 C:\wamp64\www\framework\_bin\_autoload.php(46): CascadIO\Kernel->__construct()
+#3 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#4 {main}
+  thrown in C:\wamp64\www\framework\_bin\Annotations\read.php on line 11
+[30-Jan-2022 20:04:14 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Class App\Controllers\TestController does not exist in C:\wamp64\www\framework\_bin\Annotations\read.php:11
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\Annotations\read.php(11): ReflectionClass->__construct('App\\Controllers...')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(26): require_once('C:\\wamp64\\www\\f...')
+#2 C:\wamp64\www\framework\_bin\_autoload.php(46): CascadIO\Kernel->__construct()
+#3 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#4 {main}
+  thrown in C:\wamp64\www\framework\_bin\Annotations\read.php on line 11
+[30-Jan-2022 20:04:19 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Class App\Controllers\TestController does not exist in C:\wamp64\www\framework\_bin\Annotations\read.php:11
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\Annotations\read.php(11): ReflectionClass->__construct('App\\Controllers...')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(26): require_once('C:\\wamp64\\www\\f...')
+#2 C:\wamp64\www\framework\_bin\_autoload.php(46): CascadIO\Kernel->__construct()
+#3 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#4 {main}
+  thrown in C:\wamp64\www\framework\_bin\Annotations\read.php on line 11
+[30-Jan-2022 20:04:19 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Class App\Controllers\TestController does not exist in C:\wamp64\www\framework\_bin\Annotations\read.php:11
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\Annotations\read.php(11): ReflectionClass->__construct('App\\Controllers...')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(26): require_once('C:\\wamp64\\www\\f...')
+#2 C:\wamp64\www\framework\_bin\_autoload.php(46): CascadIO\Kernel->__construct()
+#3 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#4 {main}
+  thrown in C:\wamp64\www\framework\_bin\Annotations\read.php on line 11
+[30-Jan-2022 20:04:20 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Class App\Controllers\TestController does not exist in C:\wamp64\www\framework\_bin\Annotations\read.php:11
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\Annotations\read.php(11): ReflectionClass->__construct('App\\Controllers...')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(26): require_once('C:\\wamp64\\www\\f...')
+#2 C:\wamp64\www\framework\_bin\_autoload.php(46): CascadIO\Kernel->__construct()
+#3 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#4 {main}
+  thrown in C:\wamp64\www\framework\_bin\Annotations\read.php on line 11
+[30-Jan-2022 20:04:20 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Class App\Controllers\TestController does not exist in C:\wamp64\www\framework\_bin\Annotations\read.php:11
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\Annotations\read.php(11): ReflectionClass->__construct('App\\Controllers...')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(26): require_once('C:\\wamp64\\www\\f...')
+#2 C:\wamp64\www\framework\_bin\_autoload.php(46): CascadIO\Kernel->__construct()
+#3 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#4 {main}
+  thrown in C:\wamp64\www\framework\_bin\Annotations\read.php on line 11
+[30-Jan-2022 20:04:21 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Class App\Controllers\TestController does not exist in C:\wamp64\www\framework\_bin\Annotations\read.php:11
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\Annotations\read.php(11): ReflectionClass->__construct('App\\Controllers...')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(26): require_once('C:\\wamp64\\www\\f...')
+#2 C:\wamp64\www\framework\_bin\_autoload.php(46): CascadIO\Kernel->__construct()
+#3 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#4 {main}
+  thrown in C:\wamp64\www\framework\_bin\Annotations\read.php on line 11
+[30-Jan-2022 20:04:26 Europe/Paris] Error: Class 'CascadIO\controllers\Controller' not found in C:\wamp64\www\framework\src\Controller\TestController.php:9
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\Annotations\read.php(8): require_once()
+#1 C:\wamp64\www\framework\_bin\_autoload.php(26): require_once('C:\\wamp64\\www\\f...')
+#2 C:\wamp64\www\framework\_bin\_autoload.php(46): CascadIO\Kernel->__construct()
+#3 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#4 {main}
+[30-Jan-2022 20:04:26 Europe/Paris] Error: Class 'CascadIO\controllers\Controller' not found in C:\wamp64\www\framework\src\Controller\TestController.php:9
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\Annotations\read.php(8): require_once()
+#1 C:\wamp64\www\framework\_bin\_autoload.php(26): require_once('C:\\wamp64\\www\\f...')
+#2 C:\wamp64\www\framework\_bin\_autoload.php(46): CascadIO\Kernel->__construct()
+#3 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#4 {main}
+[30-Jan-2022 20:04:41 Europe/Paris] Error: Class 'CascadIO\controllers\Controller' not found in C:\wamp64\www\framework\src\Controller\TestController.php:9
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\Annotations\read.php(8): require_once()
+#1 C:\wamp64\www\framework\_bin\_autoload.php(26): require_once('C:\\wamp64\\www\\f...')
+#2 C:\wamp64\www\framework\_bin\_autoload.php(46): CascadIO\Kernel->__construct()
+#3 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#4 {main}
+[30-Jan-2022 20:04:42 Europe/Paris] Error: Class 'CascadIO\controllers\Controller' not found in C:\wamp64\www\framework\src\Controller\TestController.php:9
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\Annotations\read.php(8): require_once()
+#1 C:\wamp64\www\framework\_bin\_autoload.php(26): require_once('C:\\wamp64\\www\\f...')
+#2 C:\wamp64\www\framework\_bin\_autoload.php(46): CascadIO\Kernel->__construct()
+#3 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#4 {main}
+[30-Jan-2022 20:05:12 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Property route does not exist in C:\wamp64\www\framework\_bin\Annotations\read.php:14
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\Annotations\read.php(14): ReflectionClass->getProperty('route')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(29): require_once('C:\\wamp64\\www\\f...')
+#2 C:\wamp64\www\framework\_bin\_autoload.php(46): CascadIO\Kernel->__construct()
+#3 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#4 {main}
+  thrown in C:\wamp64\www\framework\_bin\Annotations\read.php on line 14
+[30-Jan-2022 20:07:48 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Property Route does not exist in C:\wamp64\www\framework\_bin\Annotations\read.php:14
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\Annotations\read.php(14): ReflectionClass->getProperty('Route')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(29): require_once('C:\\wamp64\\www\\f...')
+#2 C:\wamp64\www\framework\_bin\_autoload.php(46): CascadIO\Kernel->__construct()
+#3 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#4 {main}
+  thrown in C:\wamp64\www\framework\_bin\Annotations\read.php on line 14
+[30-Jan-2022 20:08:13 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Property homepage does not exist in C:\wamp64\www\framework\_bin\Annotations\read.php:14
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\Annotations\read.php(14): ReflectionClass->getProperty('homepage')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(29): require_once('C:\\wamp64\\www\\f...')
+#2 C:\wamp64\www\framework\_bin\_autoload.php(46): CascadIO\Kernel->__construct()
+#3 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#4 {main}
+  thrown in C:\wamp64\www\framework\_bin\Annotations\read.php on line 14
+[30-Jan-2022 20:08:27 Europe/Paris] PHP Fatal error:  Uncaught ReflectionException: Property homepage does not exist in C:\wamp64\www\framework\_bin\Annotations\read.php:14
+Stack trace:
+#0 C:\wamp64\www\framework\_bin\Annotations\read.php(14): ReflectionClass->getProperty('homepage')
+#1 C:\wamp64\www\framework\_bin\_autoload.php(29): require_once('C:\\wamp64\\www\\f...')
+#2 C:\wamp64\www\framework\_bin\_autoload.php(46): CascadIO\Kernel->__construct()
+#3 C:\wamp64\www\framework\index.php(1): require_once('C:\\wamp64\\www\\f...')
+#4 {main}
+  thrown in C:\wamp64\www\framework\_bin\Annotations\read.php on line 14
+[30-Jan-2022 20:13:29 Europe/Paris] PHP Warning:  The use statement with non-compound name 'ReflectionMethod' has no effect in C:\wamp64\www\framework\_bin\Annotations\read.php on line 3
+[30-Jan-2022 20:13:29 Europe/Paris] PHP Stack trace:
+[30-Jan-2022 20:13:29 Europe/Paris] PHP   1. {main}() C:\wamp64\www\framework\index.php:0
+[30-Jan-2022 20:13:29 Europe/Paris] PHP   2. require_once() C:\wamp64\www\framework\index.php:1
+[30-Jan-2022 20:13:29 Europe/Paris] PHP   3. CascadIO\Kernel->__construct() C:\wamp64\www\framework\_bin\_autoload.php:46
+[30-Jan-2022 20:13:29 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Annotations\AnnotationException: [Type Error] Attribute "value" of @Route declared on method App\Controllers\TestController::homepage() expects a(n) string, but got array. in C:\wamp64\www\framework\vendor\doctrine\annotations\lib\Doctrine\Common\Annotations\AnnotationException.php:64
+Stack trace:
+#0 C:\wamp64\www\framework\vendor\doctrine\annotations\lib\Doctrine\Common\Annotations\AnnotationException.php(103): Doctrine\Common\Annotations\AnnotationException::typeError('Attribute "valu...')
+#1 C:\wamp64\www\framework\vendor\doctrine\annotations\lib\Doctrine\Common\Annotations\DocParser.php(937): Doctrine\Common\Annotations\AnnotationException::attributeTypeError('value', 'Route', 'method App\\Cont...', 'a(n) string', Array)
+#2 C:\wamp64\www\framework\vendor\doctrine\annotations\lib\Doctrine\Common\Annotations\DocParser.php(719): Doctrine\Common\Annotations\DocParser->Annotation()
+#3 C:\wamp64\www\framework\vendor\doctrine\annotations\lib\Doctrine\Common\Annotations\DocParser.php(376) in C:\wamp64\www\framework\vendor\doctrine\annotations\lib\Doctrine\Common\Annotations\AnnotationException.php on line 64
+[30-Jan-2022 20:13:55 Europe/Paris] PHP Fatal error:  Uncaught Doctrine\Common\Annotations\AnnotationException: [Type Error] Attribute "value" of @Route declared on method App\Controllers\TestController::homepage() expects a(n) string, but got array. in C:\wamp64\www\framework\vendor\doctrine\annotations\lib\Doctrine\Common\Annotations\AnnotationException.php:64
+Stack trace:
+#0 C:\wamp64\www\framework\vendor\doctrine\annotations\lib\Doctrine\Common\Annotations\AnnotationException.php(103): Doctrine\Common\Annotations\AnnotationException::typeError('Attribute "valu...')
+#1 C:\wamp64\www\framework\vendor\doctrine\annotations\lib\Doctrine\Common\Annotations\DocParser.php(937): Doctrine\Common\Annotations\AnnotationException::attributeTypeError('value', 'Route', 'method App\\Cont...', 'a(n) string', Array)
+#2 C:\wamp64\www\framework\vendor\doctrine\annotations\lib\Doctrine\Common\Annotations\DocParser.php(719): Doctrine\Common\Annotations\DocParser->Annotation()
+#3 C:\wamp64\www\framework\vendor\doctrine\annotations\lib\Doctrine\Common\Annotations\DocParser.php(376) in C:\wamp64\www\framework\vendor\doctrine\annotations\lib\Doctrine\Common\Annotations\AnnotationException.php on line 64
+[30-Jan-2022 20:17:30 Europe/Paris] Undefined variable: routes
+[30-Jan-2022 20:17:31 Europe/Paris] Undefined variable: routes
+[30-Jan-2022 20:17:32 Europe/Paris] Undefined variable: routes
