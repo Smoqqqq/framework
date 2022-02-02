@@ -16,14 +16,16 @@ for ($i = 0; $i < count($variables); $i++) {
 $defaults = [
     "TEMPLATES_FOLDER"      => "templates",
     "DB_NAME"               => "",
-    "DB_HOST"               => "",
+    "DB_DRIVER"             => "pdo_mysql",
     "DB_USER"               => "",
     "DB_PASS"               => "",
     "TWIG_CACHE"            => "var/cache/Twig",
     "DOCTRINE_CACHE"        => "var/cache/Doctrine",
     "ERROR_LOG"             => "/var/logs/php_error.log",
-    "SRC"                   => "src/",
+    "SRC"                   => "src",
+    "CONTROLLERS"                   => "src/Controller",
     "ROUTES"                => "var/cache/routes.php",
+    "ENTITIES"              => "src/Entity"
 ];
 
 function defaultEnv()

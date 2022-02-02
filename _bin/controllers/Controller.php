@@ -2,6 +2,9 @@
 
 namespace CascadIO\controllers;
 
+use Doctrine\ORM\Tools\Setup;
+use Doctrine\ORM\EntityManager;
+
 class Controller
 {
 
@@ -21,4 +24,7 @@ class Controller
         echo $this->twig->render($name, $context);
     }
 
+    public function getEm(){
+        return getEntityManager();
+    }
 }
