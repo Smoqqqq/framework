@@ -60,23 +60,3 @@ function endsWith($haystack, $needle)
 
     return (substr($haystack, -$length) === $needle);
 }
-
-function getEntityManager()
-{
-    global $env;
-    $paths = array($env["ENTITIES"]);
-    $isDevMode = false;
-
-    // the connection configuration
-    $dbParams = array(
-        'driver'   => $env["DB_DRIVER"],
-        'user'     => $env["DB_USER"],
-        'password' => $env["DB_PASS"],
-        'dbname'   => $env["DB_NAME"],
-    );
-
-    $config = Setup::createAnnotationMetadataConfiguration($paths, $isDevMode);
-    $entityManager = EntityManager::create($dbParams, $config);
-
-    return $entityManager;
-}

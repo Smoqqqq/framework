@@ -25,7 +25,7 @@ $defaults = [
     "SRC"                   => "src",
     "CONTROLLERS"                   => "src/Controller",
     "ROUTES"                => "var/cache/routes.php",
-    "ENTITIES"              => "src/Entity"
+    "ENTITIES"              => "./src/Entity"
 ];
 
 function defaultEnv()

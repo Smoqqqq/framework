@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '13ed86c128fe8033ef0bc2146c0ce69e4fcbfc23',
+        'reference' => 'be3534451543fd224c25e6c8aeeb4e96a74c150a',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '13ed86c128fe8033ef0bc2146c0ce69e4fcbfc23',
+            'reference' => 'be3534451543fd224c25e6c8aeeb4e96a74c150a',
             'dev_requirement' => false,
         ),
         'dealerdirect/phpcodesniffer-composer-installer' => array(
