@@ -1,11 +1,16 @@
 <?php
 
+use Doctrine\ORM\Tools\Setup;
+use Doctrine\ORM\EntityManager;
+
 /**
  * dumps and die
  * 
  * @param mixed $value      The thing to dump
  */
 function dd($value){
+    global $env;
+    if($env["ENV"] === "prod") return false;
     var_dump($value);
     die;
 }
@@ -16,9 +21,15 @@ function dd($value){
  * @param mixed $value      The thing to dump
  */
 function d($value){
+    global $env;
+    if($env["ENV"] === "prod") return false;
     var_dump($value);
 }
 
+/**
+ * Provides relative path for an asset
+ */
+// TODO: add twig asset() function
 function asset($asset)
 {
     global $env;
@@ -32,4 +43,20 @@ function asset($asset)
         $i++;
     }
     return $offset . $assetFolder . "/" . $asset;
+}
+
+function startsWith($haystack, $needle)
+{
+     $length = strlen($needle);
+     return (substr($haystack, 0, $length) === $needle);
+}
+
+function endsWith($haystack, $needle)
+{
+    $length = strlen($needle);
+    if ($length == 0) {
+        return true;
+    }
+
+    return (substr($haystack, -$length) === $needle);
 }

@@ -1,2 +1,8 @@
 ./assets/js/compiled/
 ./assets/css/compiled/
+
+./bin/dependencies
+
+./var
+
+./vendor

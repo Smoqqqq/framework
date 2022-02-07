@@ -1,6 +1,6 @@
 <?php
 
-require_once './_bin/dev/scssphp/scss.inc.php';
+require_once './_bin/dependencies/scssphp/scss.inc.php';
 
 use ScssPhp\ScssPhp\Compiler;
 use ScssPhp\ScssPhp\OutputStyle;
