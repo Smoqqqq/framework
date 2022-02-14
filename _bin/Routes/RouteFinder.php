@@ -80,14 +80,9 @@ class RouteFinder
     public function saveRoutes()
     {
         global $env;
-        $content = "<?php \n" . '$routes' . " = array(\n";
+        $content = "<?php " . '$routes' . "=array(";
         foreach ($this->routes as $route) {
-            $content .= "array(
-                'name' => '$route[name]',
-                'route' => '$route[route]',
-                'controller' => '$route[controller]',
-                'controller_path' => '$route[controller_path]'
-            ),";
+            $content .= "array('name' => '$route[name]','route' => '$route[route]','controller' => '$route[controller]','controller_path' => '$route[controller_path]'),";
         }
         $content .= ");";
         file_put_contents($env["ROUTES"], $content);

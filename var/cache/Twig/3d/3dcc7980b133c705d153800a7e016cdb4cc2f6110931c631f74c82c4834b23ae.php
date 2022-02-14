@@ -53,7 +53,6 @@ class __TwigTemplate_72419554dea73c96fe716f80df188481cd441f4fe6708462ba9a6b14ead
         // line 6
         echo twig_escape_filter($this->env, ($context["name"] ?? null), "html", null, true);
         echo "
-    
 ";
     }
 
@@ -80,7 +79,6 @@ class __TwigTemplate_72419554dea73c96fe716f80df188481cd441f4fe6708462ba9a6b14ead
     <h1>Homepage.html.twig</h1>
 
     {{ name }}
-    
 {% endblock %}", "homepage.html.twig", "C:\\wamp64\\www\\framework\\templates\\homepage.html.twig");
     }
 }

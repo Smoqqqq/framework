@@ -16,13 +16,13 @@ class User
      * @ORM\Column(type="integer")
      * @var int
      */
-    private $id;
+    protected $id;
 
     /**
      * @ORM\Column(type="string")
      * @var string
      */
-    private $name;
+    protected $name;
 
     public function getId()
     {

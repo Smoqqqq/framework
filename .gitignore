@@ -3,6 +3,6 @@
 
 ./bin/dependencies
 
-./var
+var
 
-./vendor
+vendor
