@@ -1,3 +1,5 @@
+Projet personnel de création d'un framework MVC "Symfony like"
+
 # FRAMEWORK
 
 ## Install
